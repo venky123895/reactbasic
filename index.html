@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script>
+    const element=React.createElement('h1',{},'Topics Covered')
+    const subtitle=React.createElement('p',{},'The following is a list of all topics we cover in the MDN learning area')
+    const header1=React.createElement('h2',{},'Getting started with the web')
+    const subheader1=React.createElement('p',{},'Provides a practical introduction to web development for complete beginners')
+    const header2=React.createElement('h2',{},'HTML - Structuring the web')
+    const subheader2=React.createElement('p',{},'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.')
+    const header3=React.createElement('h2',{},'CSS - Styling the web')
+    const subheader3=React.createElement('p',{},'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.')
+    const root=ReactDOM.createRoot(document.getElementById('root'))
+    root.render([element,subtitle,header1,subheader1,header2,subheader2,header3,subheader3])
+</script>
+</html>
